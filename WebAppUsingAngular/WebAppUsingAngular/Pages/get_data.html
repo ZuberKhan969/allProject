@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="mymodule">
+<head>
+    <title></title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../AngularController/productServices.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align:center;
+        }
+    </style> 
+</head>
+<body>
+    <div ng-controller="myController">
+        <table style="width:100%">
+
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Image Name</th>
+                <th>Image</th>
+            </tr>
+            <tr ng-repeat="dat in bigData">
+                <td>{{dat.EmployeeId}}</td>
+                <td>{{dat.Name}}</td>
+                <td>{{dat.Image}}</td>
+                <td><img data-ng-src="{{dat.ProfileImage}}" alt="A alt=" alternate text" style="width:120px;height:120px" /></td>
+            </tr>
+        </table>
+        <input type="button" ng-click="click()" value="Click me" />
+    </div>
+
+</body>
+</html>
