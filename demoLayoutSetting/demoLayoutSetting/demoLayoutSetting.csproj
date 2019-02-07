@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB970D85-BB09-4D59-B907-3BD2E40883B4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>demoLayoutSetting</RootNamespace>
+    <AssemblyName>demoLayoutSetting</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assest\wp-admin\css\forms.min.css" />
+    <Content Include="assest\wp-admin\css\l10n.min.css" />
+    <Content Include="assest\wp-admin\css\login.min.css" />
+    <Content Include="assest\wp-admin\images\loading.gif" />
+    <Content Include="assest\wp-admin\images\w-logo-blue.png" />
+    <Content Include="assest\wp-admin\images\wordpress-logo.svg" />
+    <Content Include="assest\wp-content\plugins\taqyeem-buttons\assets\style.css" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\closedhand.cur" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\alert.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\arrow-next-icon-64.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\arrow-next-icon-ie.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\arrow-next-vertical-icon-64.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\arrow-prev-icon-64.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\arrow-prev-icon-ie.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\arrow-prev-vertical-icon-64.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\buttons.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\caption-bg.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\fullscreen-icon-64.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\fullscreen-icon-ie.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\pause-icon-64.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\pause-icon-ie.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\play-icon-64.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\play-icon-ie.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\preloader.gif" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\skin.css" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\thumb-overlay-play.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\x-mark-icon-64.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\ilightbox\dark-skin\x-mark-icon-ie.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\style.css" />
+    <Content Include="assest\wp-content\themes\jannah\assets\css\taqyeem.css" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\tiefonticon\tiefonticon.svg" />
+    <Content Include="assest\wp-content\themes\jannah\assets\images\code-bg.png" />
+    <Content Include="assest\wp-content\themes\jannah\assets\js\parallax.js" />
+    <Content Include="assest\wp-content\themes\jannah\assets\js\scripts.js" />
+    <Content Include="assest\wp-content\themes\jannah\assets\js\sliders.js" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\1.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\10.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\11.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-1024x680.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-300x199.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-768x510.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\12.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\13.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\14.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-1024x684.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-768x513.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\15.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-1024x685.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-300x201.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-768x514.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\16.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\17.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-1024x767.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-300x225.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-768x575.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\18.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-1024x684.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-768x513.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\19.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\2.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-1024x682.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\20.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\3.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\4.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\5.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\6.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-1024x610.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-1024x683.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-300x200.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-768x512.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\7.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8-1024x576.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8-300x169.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8-768x432.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\8.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9-1024x578.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9-150x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9-220x150.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9-300x169.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9-390x220.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9-768x434.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9-780x405.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9-780x500.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\9.jpg" />
+    <Content Include="assest\wp-content\uploads\2019\01\demo-content-import-file_2019-01-17__18-05-02.xml" />
+    <Content Include="assest\wp-content\uploads\2019\01\logo-150x98.png" />
+    <Content Include="assest\wp-content\uploads\2019\01\logo-220x98.png" />
+    <Content Include="assest\wp-content\uploads\2019\01\logo-300x49.png" />
+    <Content Include="assest\wp-content\uploads\2019\01\logo-390x98.png" />
+    <Content Include="assest\wp-content\uploads\2019\01\logo.png" />
+    <Content Include="assest\wp-content\uploads\2019\01\log_file_2019-01-17__18-05-02.txt" />
+    <Content Include="assest\wp-includes\css\buttons.min.css" />
+    <Content Include="assest\wp-includes\css\dashicons.min.css" />
+    <Content Include="assest\wp-includes\css\dist\block-library\style.min.css" />
+    <Content Include="assest\wp-includes\css\dist\block-library\theme.min.css" />
+    <Content Include="assest\wp-includes\fonts\dashicons.svg" />
+    <Content Include="assest\wp-includes\js\comment-reply.min.js" />
+    <Content Include="assest\wp-includes\js\imagesloaded.min.js" />
+    <Content Include="assest\wp-includes\js\jquery\jquery-migrate.min.js" />
+    <Content Include="assest\wp-includes\js\jquery\jquery.js" />
+    <Content Include="assest\wp-includes\js\jquery\jquery.masonry.min.js" />
+    <Content Include="assest\wp-includes\js\masonry.min.js" />
+    <Content Include="assest\wp-includes\js\mediaelement\mediaelement-and-player.min.js" />
+    <Content Include="assest\wp-includes\js\mediaelement\mediaelement-migrate.min.js" />
+    <Content Include="assest\wp-includes\js\mediaelement\mediaelementplayer-legacy.min.css" />
+    <Content Include="assest\wp-includes\js\mediaelement\mejs-controls.svg" />
+    <Content Include="assest\wp-includes\js\mediaelement\wp-mediaelement.min.css" />
+    <Content Include="assest\wp-includes\js\mediaelement\wp-mediaelement.min.js" />
+    <Content Include="assest\wp-includes\js\wp-embed.min.js" />
+    <Content Include="assest\wp-includes\js\wp-emoji-release.min.js" />
+    <Content Include="assest\wp-includes\wlwmanifest.xml" />
+    <Content Include="assest\wp-json\index.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Js\angular.js" />
+    <Content Include="Js\App.js" />
+    <Content Include="Js\demoController.js" />
+    <Content Include="Js\demoService.js" />
+    <Content Include="Pages\HtmlPage1.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\demoController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_LayoutPage1.cshtml" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\fontawesome\fontawesome-webfont.woff2" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\tiefonticon\tiefonticon.eot" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\tiefonticon\tiefonticon.ttf" />
+    <Content Include="assest\wp-content\themes\jannah\assets\fonts\tiefonticon\tiefonticon.woff" />
+    <Content Include="assest\wp-content\uploads\2019\01\demo-settings-import-file_2019-01-17__18-05-02.json" />
+    <Content Include="assest\wp-includes\fonts\dashicons.eot" />
+    <Content Include="assest\wp-includes\fonts\dashicons.ttf" />
+    <Content Include="Views\demo\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36993</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36993/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
