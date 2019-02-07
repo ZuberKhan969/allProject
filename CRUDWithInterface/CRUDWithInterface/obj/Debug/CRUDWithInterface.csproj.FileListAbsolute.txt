@@ -1,0 +1,16 @@
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\bin\Debug\CRUDWithInterface.exe.config
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\bin\Debug\CRUDWithInterface.exe
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\bin\Debug\CRUDWithInterface.pdb
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\bin\Debug\EntityFramework.dll
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\bin\Debug\EntityFramework.SqlServer.dll
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\bin\Debug\EntityFramework.xml
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\bin\Debug\EntityFramework.SqlServer.xml
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\obj\Debug\CRUDWithInterface.csprojResolveAssemblyReference.cache
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\obj\Debug\CRUDWithInterface.Form1.resources
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\obj\Debug\CRUDWithInterface.Properties.Resources.resources
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\obj\Debug\CRUDWithInterface.csproj.GenerateResource.Cache
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\obj\Debug\CRUDWithInterface.exe
+E:\Zuber\CRUDWithInterface\CRUDWithInterface\obj\Debug\CRUDWithInterface.pdb
+E:\Zuber\New folder\CRUDWithInterface\CRUDWithInterface\bin\Debug\CRUDWithInterface.exe.config
+E:\Zuber\New folder\CRUDWithInterface\CRUDWithInterface\obj\Debug\CRUDWithInterface.exe
+E:\Zuber\New folder\CRUDWithInterface\CRUDWithInterface\obj\Debug\CRUDWithInterface.pdb
